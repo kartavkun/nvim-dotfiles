@@ -22,3 +22,7 @@ map("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>", { desc = "Error diagnos
 map("n", "<leader>h", function()
   Snacks.terminal(nil, { cwd = LazyVim.root() })
 end, { desc = "Terminal (Root Dir)" })
+
+map("n", "<leader>x", function()
+  Snacks.bufdelete()
+end, { desc = "Delete Buffer" })
